@@ -58,10 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Create floating hearts continuously
     setInterval(createHeart, 800);
     
-    // Restart word animation every 8 seconds (includes photo time)
+    // Restart word animation every 10 seconds (includes 4 words + photo time)
     setInterval(() => {
         words.forEach(word => word.classList.remove('show'));
         photoBox.classList.remove('show');
         setTimeout(animateWords, 500);
-    }, 8000);
+    }, 10000);
 });
